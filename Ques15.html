@@ -1,0 +1,29 @@
+<html lang="en-IN">
+	<head>
+		<meta charset="utf-8">
+		<title>Question 15</title>
+	
+	</head>
+	<body>
+
+		<button>Click me to do an AJAX call</button>
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+
+				$('button').click(function(){
+
+					$.ajax({
+						url: "www.google.com",
+						success: function(result){
+							console.log(result);
+						}
+					});
+				});
+
+			});
+		</script>
+	</body>
+</html>

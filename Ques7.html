@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q7</title>
+</head>
+<body>
+
+<p id="mmm"></p>
+<button>click me to add text</button>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function() {
+			
+			$("#mmm").append(
+            "<p>" + $( this ).text() + "</p>")});
+		$("#mmm").click(function() {
+		
+			$("#mmm").append("click me to add text <br>")
+		});
+	});
+</script>
+
+
+</body>
+</html>
